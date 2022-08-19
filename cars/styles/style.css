@@ -1,0 +1,77 @@
+/* Убираем стандартные отступы у всех элементов на странице. */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Задаем шрифты. */
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto.ttf");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Robotobold.ttf");
+    font-weight: bold;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+/* Задаем стили header'a. */
+.header {
+    border-botton: 1px solid #E5E5E5;
+    padding: 25px 0;
+}
+
+/* Задаем размеры контейнера. */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header .conteiner {
+   display: flex;
+   align-items: center;
+}
+
+.logo img {
+    vertical-align: bottom;
+}
+
+/* Задаем стили блока меню. */
+.menu {
+    margin-left: 244px;
+}
+
+. menu ul {
+    list-style: none
+    display: flex;
+}
+
+.menu-item {
+    margin-right: 115px;
+}
+
+.menu-item a {
+    font-size: 15px;
+    color: #030305;
+    text-decoration: none;
+}
+
+/* добавление рамки снизу при наведении. */
+.menu-item a:hover {
+    border-bottom: 2px solid black;
+}
+
+/* Стили для первого блока. */
+.main {
+    background-images: url("../images/background.png");
+    background-pasition: center;
+    background-size: center;
+
+
+
+}
