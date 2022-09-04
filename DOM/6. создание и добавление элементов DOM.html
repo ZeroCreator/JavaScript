@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Уроки по JavaScript</title>
+</head>
+<style>
+    .msg {
+        width: 400px;
+        margin: 0 auto;
+        text-align: center;
+        background: #20454B;
+        padding: 5px;
+        border-radius: 5px;
+        color: #eee;
+        font-size: 24px;
+    }
+</style>
+<body>
+<!-- <div class="msg">Важная информация</div> -->
+<h1>Солнечная система</h1>
+<ul>
+    <li>Солнце
+    <li>Меркурий
+    <li>Венера
+    <li>Земля
+</ul>
+<script>
+    let div = document.createElement('div');
+    div.className = "msg";
+    div.innerHTML = "Важная информация";
+    document.body.append(div);
+
+    let list = document.querySelector("ul");
+    list.before('before');
+    list.after('after');
+
+    let li_1 = document.createElement('li');
+    li_1.innerHTML = "первый элемент";
+    list.prepend(li_1);
+
+    let li_2 = document.createElement('li');
+    li_2.innerHTML = "последний элемент";
+    list.append(li_2);
+
+    //let list1 = document.querySelector("ul");
+    //list1.replaceWith(document.createElement("hr"),
+     //               "замена",
+     //               document.createElement("br"));
+
+    let li = document.querySelector("ul > li:first-child");
+    let list2 = document.querySelector("ul");
+    list2.append(li);
+
+    let textNode = document.createTextNode('Текстовый элемент');
+    document.body.append(textNode)
+
+</script>
+</body>
+</html>

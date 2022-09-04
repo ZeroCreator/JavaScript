@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <title>Уроки по JavaScript</title>
+</head>
+<body>
+<h1>Солнечная система</h1>
+<ul></ul>
+
+<script>
+    let fr = new DocumentFragment();
+    let list=["Меркурий", "Венера", "Земля", "Марс"];
+    for (let p of list) {
+        let item = document.createElement('li');
+        item.innerHTML = p;
+        fr.append(item);
+    }
+    let ul = document.querySelector("ul");
+    ul.append(fr);
+</script>
+
+</body>
+</html>

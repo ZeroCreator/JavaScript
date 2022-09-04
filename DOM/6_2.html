@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <title>Уроки по JavaScript</title>
+</head>
+<body>
+<h1>Солнечная система</h1>
+<ul class="list">
+    <li>Солнце
+    <li>Меркурий
+    <li>Венера
+    <li>Земля
+    <li>Марс
+</ul>
+<script>
+    let idRemove = setInterval(function () {
+        let li = document.querySelector("ul.list > li:last-child");
+        if (li === null) {
+            clearInterval(idRemove);
+            alert("Список удален");
+        }
+        else li.remove();
+    }, 500);
+</script>
+</body>
+</html>

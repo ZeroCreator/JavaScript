@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Уроки по JavaScript</title>
+</head>
+<body>
+<h1>Солнечная система</h1>
+<table border=1 cellpadding="10">
+    <tr><td>Солнце</td><td>Звезда</td></tr>
+    <tr><td>Меркурий</td><td>Планета</td></tr>
+</table>
+
+<script>
+    let t = document.querySelector("table");
+    let r = document.querySelector("table>tbody>tr:last-child");
+
+    let row = r.cloneNode(true);
+    row.firstChild.innerHTML = "Венера";
+    t.append(row);
+
+</script>
+</body>
+</html>
