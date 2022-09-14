@@ -22,7 +22,7 @@ body {
 
 /* Задаем стили header'a. */
 .header {
-    border-botton: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
     padding: 25px 0;
 }
 
@@ -32,7 +32,7 @@ body {
     margin: 0 auto;
 }
 
-.header .conteiner {
+.header .container {
    display: flex;
    align-items: center;
 }
@@ -47,7 +47,7 @@ body {
 }
 
 . menu ul {
-    list-style: none
+    list-style: none;
     display: flex;
 }
 
@@ -68,8 +68,8 @@ body {
 
 /* Стили для первого блока. */
 .main {
-    background-images: url("../images/background.png");
-    background-pasition: center;
+    background-image: url("../images/background.png");
+    background-position: center;
     background-size: center;
     padding: 104px 0 154px 0;
 }
@@ -83,14 +83,14 @@ body {
     font-size: 80px;
     line-height: 110%;
     color: #030305;
-    padding-botom: 40px;
+    padding-bottom: 40px;
 }
 
 .main-text {
     font-size: 16px;
     line-height: 130%;
     color: #030305;
-    padding-botom: 40px;
+    padding-bottom: 40px;
     max-width: 502px;
 }
 
