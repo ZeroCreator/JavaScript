@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Уроки по JavaScript</title>
+</head>
+<body>
+<p><a id="link" href="#" onclick="showMessage()">Нажми меня</a>
+    <p><input type="button" value="Событие onclick" />
+<script>
+    let inp = document.querySelector("input");
+    inp.onclick = showMessage;
+    //inp.onclick = null;
+
+    function showMessage() {
+        alert(this.tagName);
+    }
+</script>
+</body>
+</html>
