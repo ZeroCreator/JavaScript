@@ -34,24 +34,50 @@ function cloneDeepObj(dest, obj) {
     return dest
 }
 
-// structured cloning algorithm - lodash - _/cloneDep(obj)
+// structured cloning algorithm - lodash - _.cloneDeep(obj)
 
 // функции - конструкторы
-function Book(title, author, prise) {
-    // this = {}; (неявно)
-    this.title = title;
-    this.author = author;
-    this.price = price;
-    // return this; (неявно)
-}
-
-let book = new Book("Муму", "Тургенев", 10);
-let book2 = new Book("Онегин", "Пушкин", 20);
-// {}
-console.log(book);
+// function Book(title, author, price) {
+//     // this = {}; (неявно)
+//     this.title = title;
+//     this.author = author;
+//     this.price = price;
+//     // return this; (неявно)
+// }
+//
+// let book = new Book("Муму", "Тургенев", 10);
+// let book2 = new Book("Онегин", "Пушкин", 20);
+// // {}
+// console.log(book);
 
 /*
 1. Создается новый пустой объект, на который указывает this.
 2. Выполняется тело функции, добавляя в новый объект новые свойства.
 3. Возвращается значение this.
  */
+
+// Анонимные функции в качестве конструкторов
+let car = new function() {
+    this.model - 'reno';
+    thos.go = functiom() {
+        console.log("машина едет");
+    }
+}
+
+car.go();
+console.log(car);
+
+function Book(title, author) {
+    if(new.target == undefined) // если вызвали без new
+        return new Book(title, author); // добавим new автоматически
+
+    this.title = title;
+    this.author = author;
+    this.price = 10;
+    //return this; // == return;
+}
+
+let book = Book();
+console.log(book);
+let book = new Book("Онегин", "Пушкин");
+console.log(book);
