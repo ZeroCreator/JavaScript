@@ -46,7 +46,7 @@ body {
     margin-left: 244px;
 }
 
-. menu ul {
+.menu ul {
     list-style: none;
     display: flex;
 }
@@ -70,7 +70,7 @@ body {
 .main {
     background-image: url("../images/background.png");
     background-position: center;
-    background-size: center;
+    background-size: cover;
     padding: 104px 0 154px 0;
 }
 
@@ -107,4 +107,152 @@ body {
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #FFFFFF;
+    transition: background-color .5s;
+}
+
+.button:hover {
+    cursor: pointer;
+    background: #575757;
+}
+
+/* Стили для элементов car. */
+.car {
+    padding: 100px 0;
+}
+
+.sub-title {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    color: #030305;
+}
+
+.car-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.car-item {
+    max-width: 384px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.car-item-image:hover img {
+    transform: scale(1.1);
+}
+
+.car-item-image img {
+    vertical-align: bottom;
+    transition: all .3s;
+}
+
+.car-item-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #030305;
+    padding: 15px 0 17px 0;
+}
+
+.car-item-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-item-point {
+    width: 110px;
+    height: 92px;
+    margin: 0 7.5px;
+}
+
+.car-item-point img {
+    margin-bottom: 11px;
+}
+
+.car-item-action {
+    margin-top: 13px;
+}
+
+.car-item-action  .button{
+    width: 100%;
+    padding: 15px;
+    height: 54px;
+}
+
+.car-item-point > div:nth-child(2) {
+    font-weight: bold;
+}
+
+/* Стили для элементов блока price. */
+.price {
+    overflow: hidden;
+}
+
+.price .container {
+    position: relative;
+    padding-bottom: 121px;
+}
+
+.price .sub-title {
+    margin-bottom: 20px;
+}
+
+.price-text {
+    font-size: 16px;
+    line-height: 130%;
+    color: #5D5D5F;
+    margin-bottom: 60px;
+}
+
+.price-form {
+    max-width: 344px;
+}
+
+.price-input {
+    padding: 22px 18px;
+    width: 344px;
+    height: 65px;
+    background: #FFFFFF;
+    border: 1px solid #5D5D5F;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #000000;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.price-input::placeholder {
+    color: #5D5D5F;
+}
+
+.price .button {
+    width: 100%;
+}
+
+.price-image {
+    position: absolute;
+    bottom: 0;
+    left: 401px;
+}
+
+/* Стили для элементов footer'a. */
+.footer {
+    border-top: 1px solid #E5E5E5;
+    padding: 25px 0;
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rights {
+    font-size: 15px;
+    color: #030305;
 }
